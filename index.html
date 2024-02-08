@@ -36,8 +36,8 @@
 			<img src="img/william-dozer@2x.jpg" alt="William Dozer">
 			<figcaption>William Dozer on that fateful day</figcaption>
 		</figure>
-		<p>NAPS began in 1938 when our founder, William Dozer, was fired from his job for taking a siesta during work hours at a Baltimore factory. William realized that siestas are a fundamental human right, so he organized a strike at the factory. The strike was a success and led to a company-wide policy which allowed three siestas per day. After the successful strike, William Dozer started NAPS with the goal of implementing similar policies across the United States. Today NAPS operates out of Washington, D.C. with local chapters in all 50 states, advocating for free sleep in all spheres of life.</p>
 	</div>
+		<p>NAPS began in 1938 when our founder, William Dozer, was fired from his job for taking a siesta during work hours at a Baltimore factory. William realized that siestas are a fundamental human right, so he organized a strike at the factory. The strike was a success and led to a company-wide policy which allowed three siestas per day. After the successful strike, William Dozer started NAPS with the goal of implementing similar policies across the United States. Today NAPS operates out of Washington, D.C. with local chapters in all 50 states, advocating for free sleep in all spheres of life.</p>
 </main>
 
 <footer>
@@ -52,9 +52,15 @@
 'NAPS has ushered in a new era of sleep. — USA Today',
 'Not surprisingly, more siestas means more productivity. — Wall Street Journal',
 'NAPS is doing the hard work of helping people get the rest they need. — U.S. News']
+
+
+//the math.floor make sure the numbers are whole numbers
+const randomNumber = Math.floor(Math.random() * quotesArray.length)
+
+document.getElementById('press-quote').textContent = ' “ ' + quotesArray[randomNumber].split(' — ')[0] + ' ” — ' + quotesArray[randomNumber].split(' — ')[1];
+[randomNumber].split(' - ');
 </script>
-const randomNumber = Math.random()
-document.getElementById('press-quote'). textContent = quotesArray[]
+
 
 </body>
 </html>
